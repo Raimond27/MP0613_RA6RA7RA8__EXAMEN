@@ -21,7 +21,7 @@
                         <p class="mb-3">{{ __('You are logged in!') }}</p>
                         <div class="d-flex flex-wrap gap-2">
                             <a class="btn btn-outline-primary" href="{{ route('pizzas.index') }}">View All Pizza Orders</a>
-                            <a class="btn btn-primary" href="{{ route('pizzas.create') }}">Order a New Pizza</a>
+                            <a class="btn btn-primary" href="{{ route('order.create') }}">Order a New Pizza</a>
                             <a class="btn btn-light" href="{{ url('/') }}">Goto Welcome Page</a>
                         </div>
                     </div>

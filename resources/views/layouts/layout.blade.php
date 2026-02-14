@@ -21,7 +21,7 @@
 @yield('content')
 
 <footer>
-    Copyright 2022
+    Copyright 2026
     <span class="logo">
         <span class="text">Jiyooo<strong>Pizza</strong></span>
     </span>

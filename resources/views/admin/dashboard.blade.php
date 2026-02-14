@@ -52,8 +52,8 @@
                         <div class="mb-3">
                             <i class="fas fa-dollar-sign fa-3x text-warning"></i>
                         </div>
-                        <h3 class="mb-0">Active</h3>
-                        <p class="text-muted mb-0">System Status</p>
+                        <h3 class="mb-0">${{ number_format($stats['total_sales'], 2) }}</h3>
+                        <p class="text-muted mb-0">Total Sales</p>
                     </div>
                 </div>
             </div>
@@ -74,7 +74,7 @@
                             <a href="{{ route('admin.pizzas.index') }}" class="btn btn-outline-primary">
                                 <i class="fas fa-list"></i> Manage Pizzas
                             </a>
-                            <a href="{{ route('order.index') }}" class="btn btn-outline-success">
+                            <a href="{{ route('admin.orders.index') }}" class="btn btn-outline-success">
                                 <i class="fas fa-shopping-cart"></i> View Orders
                             </a>
                         </div>

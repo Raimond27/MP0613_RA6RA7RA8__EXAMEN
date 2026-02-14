@@ -16,7 +16,8 @@ class AdminController extends Controller
             'total_pizzas' => Pizza::count(),
             'total_orders' => Order::count(),
             'total_users' => User::where('role', 'client')->count(),
-            'recent_orders' => Order::with('user')->latest()->take(5)->get(),
+            'total_sales' => Pizza::sum('price'),
+            'recent_orders' => Order::with('user')->latest()->take(10)->get(),
         ];
 
         return view('admin.dashboard', compact('stats'));

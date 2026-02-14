@@ -15,17 +15,7 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('users')->insert([
-            [
-                'name' => 'Admin User',
-                'email' => 'admin@pizzeria.com',
-                'role' => 'admin',
-                'email_verified_at' => now(),
-                'password' => Hash::make('admin123'),
-                'remember_token' => null,
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
+        DB::table('users')->insert([            
             [
                 'name' => 'Alice Johnson',
                 'email' => 'alice@example.com',
@@ -72,6 +62,16 @@ class UserSeeder extends Seeder
                 'role' => 'client',
                 'email_verified_at' => now(),
                 'password' => Hash::make('password'),
+                'remember_token' => null,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'name' => 'Admin User',
+                'email' => 'jiyooo@pizzeria.com',
+                'role' => 'admin',
+                'email_verified_at' => now(),
+                'password' => Hash::make('youfoundme'),
                 'remember_token' => null,
                 'created_at' => now(),
                 'updated_at' => now(),

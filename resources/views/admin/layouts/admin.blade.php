@@ -52,6 +52,11 @@
                             <i class="fas fa-pizza-slice"></i> Manage Pizzas
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link {{ request()->routeIs('admin.orders.*') ? 'active' : '' }}" href="{{ route('admin.orders.index') }}">
+                            <i class="fas fa-shopping-cart"></i> Manage Orders
+                        </a>
+                    </li>
                 </ul>
 
                 <!-- Right Side Of Navbar -->

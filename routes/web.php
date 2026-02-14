@@ -6,6 +6,7 @@ use App\Http\Controllers\OrderController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\AdminPizzaController;
+use App\Http\Controllers\Admin\AdminOrderController;
 
 /*
 |--------------------------------------------------------------------------
@@ -47,6 +48,12 @@ Route::prefix('admin')->middleware('admin')->group(function () {
         Route::get('/pizzas/{id}/edit', 'edit')->name('admin.pizzas.edit');
         Route::put('/pizzas/{id}', 'update')->name('admin.pizzas.update');
         Route::delete('/pizzas/{id}', 'destroy')->name('admin.pizzas.destroy');
+    });
+    
+    Route::controller(AdminOrderController::class)->group(function () {
+        Route::get('/orders', 'index')->name('admin.orders.index');
+        Route::get('/orders/{id}', 'show')->name('admin.orders.show');
+        Route::delete('/orders/{id}', 'destroy')->name('admin.orders.destroy');
     });
 });
 
