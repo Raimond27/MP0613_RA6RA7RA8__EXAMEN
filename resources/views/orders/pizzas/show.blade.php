@@ -41,7 +41,7 @@
                         </div>
 
                         <div class="mt-4 d-flex gap-2">
-                            <form action="{{ route('order.ges', $order->id) }}" method="POST">
+                            <form action="{{ route('order.destroy', $order->id) }}" method="POST">
                                 @csrf
                                 @method('DELETE')
                                 <button class="btn btn-danger" type="submit"><i class="fa-solid fa-check"></i> Cancel order</button>
