@@ -104,4 +104,3 @@ php artisan serve
 4. Manage Pizzas: Create, read, edit, delete pizzas with image selection and topping management
 5. Manage Orders: View all orders from all clients, see order details, delete orders
 
-
